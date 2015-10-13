@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="Blog" ng-controller="ApplicationCtrl">
 <head>
     <meta charset="UTF-8">
     <title>Blog</title>
@@ -21,7 +21,9 @@
                    ng-show="isLoggedIn">
                     Log out
                 </a>
-                <a class="blog-nav-item" href="#/users/create" ng-class="{active: isActive('/users/create')}">
+                <a class="blog-nav-item"
+                   href="#/users/create"
+                   ng-class="{active: isActive('/users/create')}">
                     Register
                 </a>
                 <a class="blog-nav-item" href="#/posts/create"
